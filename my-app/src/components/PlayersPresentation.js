@@ -4,7 +4,7 @@ export default function PlayersPresentation({players}) {
   return (
   <div className='container'>
     {players.map((player)=>(
-    <div className='column'>
+    <div className='column' key={player.id}>
     <div className='card'>
     <img src={player.img}/>
      <h3>{player.name}</h3>
